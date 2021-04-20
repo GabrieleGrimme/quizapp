@@ -1,12 +1,29 @@
-* {
+*,
+*::before,
+*::after {
     box-sizing: border-box;
   }
 
+h1,
+h2,
+h3 {line-height: 1.2;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin:0;
+}
+
 body {
-    line-height: 1.25rem;
-    font-family: sans-serif;
-    font-size: 1.25rem;
-    padding: 20px;
+  background: ivory;
+  line-height: 1.25rem;
+  font-family: sans-serif;
+  font-size: 1.25rem;
+  width:100vw;
+  xpadding: 20px;
 }
 
 a {
@@ -19,6 +36,7 @@ a {
 .img__icon--on {
     width:30px;
     background-color: hotpink;
+    padding: 5px;
   }
 
 .img__icon--off {
