@@ -3,33 +3,47 @@
   }
 
 body {
-    display: grid;
-    grid-template-columns: 1fr 3fr 1fr;	
-    grid-template-rows: 150px 1fr 100px;
+    xdisplay: grid;
+    xgrid-template-columns: 1fr 3fr 1fr;	
+    xgrid-template-rows: 150px 1fr 100px;
     line-height: 1.25rem;
     font-family: sans-serif;
+    font-size: 1.25rem;
     padding: 20px;
 }
-header {
+/*header {
     grid-column: 1 / span 3;
   }
 
 footer {
     grid-column: 1 / span 3;
   }
+*/
 
 a {
     text-decoration: none;
     color: turquoise;
     font-style: oblique;
   }
-  
-  .img-icon {
-    width:40px;
+
+.footnote {
+    font-size: small;
   }
-  
+
+/* icons sind on pink unterlegt, off etwas durchscheinender */
+.img-icon-on {
+    width:30px;
+    background-color: hotpink;
+  }
+
+.img-icon-off {
+  width:30px;
+  opacity: 50%;
+}
+
   /* Listenstyling */
-  .list {
+.list {
+    display: flex;
     list-style: none;
     padding: 0.5rem;
     margin: 0;
@@ -39,12 +53,14 @@ a {
     background-color: aquamarine;
     color:#444;
     padding: 5px;
+    margin: 10px;
     border-radius: 5px;
   }
   
   /* Flexboxes 
-  .flex-container {
+  .flex-box {
     display: flex;
+    align-items: column;
     flex-wrap: wrap;
     border: 1px solid slategrey;
     background-color:paleturquoise; 
@@ -53,23 +69,25 @@ a {
     margin: 10px;
   }
   
-  .flex-container-item {
+  .flex-box-item {
+    flex-wrap: wrap;
+    align-items: column;
     border: 1px solid palevioletred;
     background-color: palegreen;
     padding: 10px;
     margin: 5px;
-    border-radius: 20px;*/
-  }
+    border-radius: 20px;
+  }*/
     
   /* grid boxes */
   
  .grid-box {
-    display: grid;
+    xdisplay: grid;
     border: 1px solid yellow;
+    background-color: paleturquoise;
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
-    background-color: yellow;
     xcolor: #444;
   }
   
@@ -81,4 +99,3 @@ a {
     padding: 10px;
     margin: 10px;
    }
- 
