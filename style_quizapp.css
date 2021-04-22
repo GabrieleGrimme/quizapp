@@ -1,3 +1,20 @@
+:root {
+  --primary: ivory;
+  --bg-card:  #444;
+  --bg-item: paleturquoise;
+  --nav-item: hotpink;
+  --bd-card: hotpink;
+  --bd-item: yellow;
+
+  --fs-200: 0.75rem;
+  --fs-300: 1rem;
+  --fs-400: 1.25rem;
+  --fs-500: 1.375;
+  --fs-600: 1.75rem;
+  --fs-900: 2.125;
+}
+
+
 *,
 *::before,
 *::after {
@@ -5,10 +22,10 @@
   }
 
 body {
-  background: ivory;
-  line-height: 1.25rem;
+  background: var(--primary);
+  line-height: var(--fs-400);
   font-family: sans-serif;
-  font-size: 1.25rem;
+  font-size: var(--fs-500);
   width:100vw;
   height: 300vh;
 }
@@ -19,22 +36,17 @@ body {
     position: sticky;
     z-index: 200;
     top: 0; 
-    border: 2px solid yellow;
-    background-color: paleturquoise;
-    border-radius: 10px;
-    padding: 10px;
     margin: 10px;
+    padding: 10px;
+    border: 2px solid var(--bd-item);
+    background-color: var(--bg-item);
+    border-radius: 10px;
   }
 
 .bookmark {
   position: absolute;
   top: -5%;
   right: 5%;
-  xbackground-color: hotpink;
-  xbackground-image: radial-gradient( white, transparent);
-  xtext-align: right;
-  xmargin-top: -1.25rem;
-  xpadding: 0;
 }
 
 
@@ -42,34 +54,48 @@ body {
 .nav__container {
     display: flex;
     justify-content: center;
-    border: 2px solid yellow;
-    background-color: paleturquoise;
+    border: 3px solid var(--bd-item);
+    background-color: var(--bg-item);
     border-radius: 10px;
     padding: 10px;
     margin: 10px;
     list-style: none;
   }
   
-.container__item,
-.nav__container__item {
+.container__item {
     position:relative;
-    background-color: #444;
-    border: 5px solid hotpink;
-    color: #fff;
+    transform: scale(1.0);
+    background-color: var(--bg-card);
+    border: 2px solid var(--bd-card);
+    color: var(--primary);
     border-radius: 20px;
     padding: 10px;
     margin: 10px;
    }
+   
+   .nav__container__item {
+       position:relative;
+       transform: scale(1.0);
+       background-color: var(--bg-card);
+       border: 2px solid var(--bd-card);
+       color: var(--primary);
+       border-radius: 20px;
+       padding: 10px;
+       margin: 10px;
+      }
+   
+.squeeze:hover {
+  transform: scale(1.2);
+  transition: transform .8s ease;
+}
 
 .button {
   position: absolute;
   top: 30%;
   right: 5%;
   padding: 5px;
-  border: solid 3px hotpink;
+  border: solid 3px var(--bd-card);
   border-radius: 50px;
-  xbackground-color: yellow;
-  xbackground-image: radial-gradient( white, transparent);
 }
    
 .navigation {
@@ -91,6 +117,8 @@ body {
 }
 
 .active {
-  background-color: hotpink;
+  xborder: dotted 5px var(--bd-item);
+  background-color: var(--nav-item);
   background-image: radial-gradient( white, transparent);
 }
+
