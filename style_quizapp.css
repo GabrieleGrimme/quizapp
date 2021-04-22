@@ -16,10 +16,9 @@ body {
 .head__container {
     display: flex;
     justify-content: center;
-    xposition: fixed;
+    position: sticky;
+    z-index: 200;
     top: 0; 
-    xleft: 0;
-    xright: 0;
     border: 2px solid yellow;
     background-color: paleturquoise;
     border-radius: 10px;
@@ -29,8 +28,8 @@ body {
 
 .bookmark {
   position: absolute;
-  top: 110px;
-  right: 20px;
+  top: -5%;
+  right: 5%;
   xbackground-color: hotpink;
   xbackground-image: radial-gradient( white, transparent);
   xtext-align: right;
@@ -53,6 +52,7 @@ body {
   
 .container__item,
 .nav__container__item {
+    position:relative;
     background-color: #444;
     border: 5px solid hotpink;
     color: #fff;
@@ -63,8 +63,8 @@ body {
 
 .button {
   position: absolute;
-  top: 160px;
-  right: 60px;
+  top: 30%;
+  right: 5%;
   padding: 5px;
   border: solid 3px hotpink;
   border-radius: 50px;
