@@ -8,7 +8,7 @@
 <title>Quiz App</title>
 </head>
 <body>
-    <header>
+    <header class="head__container">
         <h1>Quiz App</h1>
     </header>    
         
@@ -16,19 +16,24 @@
         
        <!-- <section class="grid-box"> -->
         <section>
-            <article class="cards__container__item">
+            <article class="container__item">
+                <div class="bookmark">
+                    <img src="bookmark1.png" alt="bookmark_added" class="img__icon active">
+                </div>
                     <h2>Question</h2>
-                    <span>
-                        <img src="bookmark1.png" alt="bookmark_added" class="img__icon--on">
-                    </span>
-                <p>Wer ist der Sonnengott?</p>
-                <p><button name="answer">Show</button></p>
+                <p>Who is the god of sun in old Egypt?</p>
+                <p><button class="button" name="answer">Show me the answer!</button></p>
                 <p>
-                    <ul class="cards__container">
-                        <li class="cards__container__item">Horus</li>
-                        <li class="cards__container__item">Ra</li>
-                        <li class="cards__container__item">Isis</li>
-                        <li class="cards__container__item">Hades</li>
+                        <details>
+                            <summmary>Ra</summmary>
+                        </details>
+                </p>
+                <p>
+                    <ul class="container">
+                        <li class="container__item">Horus</li>
+                        <li class="container__item">Ra</li>
+                        <li class="container__item">Isis</li>
+                        <li class="container__item">Hades</li>
                     </ul>
                 </p>
             </article>
@@ -36,25 +41,24 @@
     </main>
                 
     <footer>
-        <nav>
+        <nav class="navigation">
             <section>
                 <article>
-                        <ul class="cards__container">
-                            <li class="cards__container__item"><img src="bookmark.png" alt="bookmark_notadded" class="img__icon--on">
+                        <ul class="nav__container">
+                            <li class="nav__container__item active"><img src="bookmark.png" alt="bookmark_notadded" class="img__icon">
                             </li>
-                            <li class="cards__container__item"><img src="bookmark1.png" alt="bookmark_added" class="img__icon--off"></span>
+                            <li class="nav__container__item"><img src="bookmark1.png" alt="bookmark_added" class="img__icon"></span>
                             </li>
-                            <li class="cards__container__item"><img src="004-left-align.png" alt="create" class="img__icon--off">
+                            <li class="nav__container__item"><img src="004-left-align.png" alt="create" class="img__icon">
                             </li>
-                            <li class="cards__container__item"><img src="001-user.png" alt="profile" class="img__icon--off"></li>
+                            <li class="nav__container__item"><img src="001-user.png" alt="profile" class="img__icon"></li>
                         </ul>
                     </p>
                 </article>
-             </nav>
+<!--            <div class="footnote">Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+            <div class="footnote">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>-->
+        </nav>
 
-        <div class="footnote">Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div class="footnote">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
     </footer>
-    
 </body>
 </html>
