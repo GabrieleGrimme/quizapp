@@ -1,6 +1,6 @@
 :root {
   --primary: ivory;
-  --bg-card:  #444;
+  --bg-card: #444;
   --bg-item: paleturquoise;
   --nav-item: hotpink;
   --bd-card: hotpink;
@@ -45,13 +45,23 @@ body {
 
 .bookmark {
   position: absolute;
-  top: -5%;
+  top: -3%;
   right: 5%;
 }
 
 
-.container,
-.nav__container {
+.container {
+    display: flex;
+    justify-content: center;
+    border: 3px solid var(--bd-item);
+    background-color: var(--bg-item);
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+    list-style: none;
+  }
+
+  .nav__container {
     display: flex;
     justify-content: center;
     border: 3px solid var(--bd-item);
@@ -64,7 +74,6 @@ body {
   
 .container__item {
     position:relative;
-    transform: scale(1.0);
     background-color: var(--bg-card);
     border: 2px solid var(--bd-card);
     color: var(--primary);
@@ -72,17 +81,25 @@ body {
     padding: 10px;
     margin: 10px;
    }
-   
-   .nav__container__item {
-       position:relative;
-       transform: scale(1.0);
-       background-color: var(--bg-card);
-       border: 2px solid var(--bd-card);
-       color: var(--primary);
-       border-radius: 20px;
-       padding: 10px;
-       margin: 10px;
-      }
+
+.container__profile__tags {
+  display: flex;
+  border-radius: 50%;
+  padding: 10px;
+  margin: 10px;
+  list-style-type: none;
+  }
+
+.nav__container__item {
+  transform: scale(1.0);
+  background-color: var(--primary);
+  border: 2px solid var(--bd-card);
+  color: var(--primary);
+  border-radius: 20px;
+  padding: 10px;
+  margin: 10px;
+  z-index: 100;
+  }
    
 .squeeze:hover {
   transform: scale(1.2);
@@ -104,6 +121,7 @@ body {
   left: 0;
   right: 0;
   padding-bottom: 20px;
+  z-index: 200;
 }   
 
 .img__icon {
@@ -111,13 +129,7 @@ body {
   padding: 5px;
 }
 
-.footnote {
-  font-size: small;
-  text-align: center;
-}
-
 .active {
-  xborder: dotted 5px var(--bd-item);
   background-color: var(--nav-item);
   background-image: radial-gradient( white, transparent);
 }

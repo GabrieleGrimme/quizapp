@@ -4,61 +4,75 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style_quizapp.css"
+    <link rel="stylesheet" href="style_quizapp.css">
     <title>Create</title>
 </head>
 <body>
-    <header>
-        <h1>Quiz App - Create</h1>
+    <header class="head__container">
+        <h1>Create</h1>
     </header>    
         
     <main>
-        
-       <!-- <section class="grid-box"> -->ç
-        <section class="grid-box">
-            <!-- question1-->
-            <!-- <article class="grid-box-item"> -->
-            <article class="grid-box-item">
-                    <h2>Create</h2>
-                <p>Type in a new question:</p>
-                <p><input type></p>
-                <p>Type in the answer:</p>
-                <p><input type></p>
-                <p><button name="submit">Submit</button></p>
-               <!-- <p>
-                    <ul class="list">
-                        <li class="list-tag">Horus</li>
-                        <li class="list-tag">Ra</li>
-                        <li class="list-tag">Isis</li>
-                        <li class="list-tag">Hades</li>
-                    </ul>
-                </p>-->
-            </article>           
-    </main>
+        <section>
+            <article class="container__item">
+                <h1>Add a new Question</h1>
+                <p><label for name="new_question">
+                    Type in a new question:
+                </label>
+                </p>
+                <p>
+                    <input type="text" id="new_question" name="new_question">
+                </p>
+                <p><label for name="answer">
+                    Type in the answer:
+                    </label>
+                </p>
+                <p>
+                    <input type="text" id="answer" name="answer">
+                </p>
+                    <label for name="answer"></label>
+                <p>Add tags divided by comma:
+                    </label>
+                </p>
+                <p>
+                    <input type="text" id="tags" name="tags">
+                </p>
+                <p><button name="submit">Submit
+                   </button>
+                </p>
+            </article>
+    </section>
+   </main>
                 
     <footer>
-        <nav>
-            <section class="grid-box">
-                <!-- question1-->
-                <!-- <article class="grid-box-item"> -->
-                <article class="grid-box-item">
-                        <ul class="list">
-                            <li class="list-tag"><img src="bookmark.png" alt="bookmark_notadded" class="img-icon-on">
+        <nav class="navigation">
+            <section>
+                <article>
+                        <ul class="nav__container">
+                            <li class="nav__container__item squeeze">
+                                <a href="index.html">
+                                    <img src="bookmark.png" alt="bookmark_notadded" class="img__icon">
+                                </a>
                             </li>
-                            <li class="list-tag"><img src="bookmark1.png" alt="bookmark_added" class="img-icon-off"></span>
+                            <li class="nav__container__item squeeze">
+                                <a href="bookmarks.html">
+                                    <img src="bookmark1.png" alt="bookmark_added" class="img__icon">
+                                </a>
                             </li>
-                            <li class="list-tag"><img src="004-left-align.png" alt="create" class="img-icon-off">
+                            <li class="nav__container__item squeeze active">
+                                <!-- <a href="create.html">-->
+                                    <img src="004-left-align.png" alt="create" class="img__icon">
+                                <!--</a>-->
                             </li>
-                            <li class="list-tag"><img src="001-user.png" alt="profile" class="img-icon-off"></li>
+                            <li class="nav__container__item squeeze">
+                                <a href="profile.html">
+                                    <img src="001-user.png" alt="profile" class="img__icon">
+                                </a>
+                            </li>
                         </ul>
                     </p>
                 </article>
-             </nav>
-
-        <div class="footnote">Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
-        <div class="footnote">Icons made by <a href="https://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></div>
+        </nav>
     </footer>
-    
-    
 </body>
 </html>
