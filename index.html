@@ -5,32 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style_quizapp.css">
-<title>Bookmarks</title>
+<title>Quizzapp</title>
 </head>
 <body>
+ 
+
     <header class="head__container">
         <h1>Quiz App</h1>
     </header>    
         
     <main>   
+        
         <section>
             <article class="container__item">
                 <div class="bookmark">
                     <img src="bookmark1.png" alt="bookmark_added" class="img__icon active">
                 </div>
                     <h1>Question</h1>
-                <p>Who is the god of sun in old Egypt?
-                </p>
-                <p>
-                    <button class="button" name="answer">Show me the answer!
+                <p>Who is the god of sun in old Egypt
+                    <button class="card__button">Show me the answer!
                     </button>
                 </p>
-                <p>
+                
+                <p class="card__answer hidden">Ra is the answer!    
+                </p>
+                
+              <!--  <p>
                     <details>
                         <summary>The Answer</summary>
                             <p>Ra</p>
                         </details>
-                </p>
+                </p>-->
+
                 <p>
                     <ul class="container">
                         <li class="container__item">Horus</li>
@@ -48,26 +54,33 @@
                 <img src="bookmark.png" alt="bookmark_added" class="img__icon active">
             </div>
                 <h1>Question</h1>
-            <p>Do you know the name of the Egypt god of death?
-                <button class="button" name="answer">Show me the answer!
-                </button>
-            </p>
-            <p>
-                    <details>
-                        <summmary>The Answer</summmary>
-                        <p>Anubis</p>
-                    </details>
-            </p>
-            <p>
-                <ul class="container">
-                    <li class="container__item">Horus</li>
-                    <li class="container__item">Ra</li>
-                    <li class="container__item">Isis</li>
-                    <li class="container__item">Anubis</li>
-                </ul>
-            </p>
-        </article>
-</section>
+            
+                <p>Do you know the name of the Egypt god of death?
+                    <button class="card__button squeeze">Show me the answer!
+                    </button>
+                </p>
+
+                <p class="card__answer hidden">Ra is it, for shure!    
+                </p>
+
+                <p>
+                    <button class="card__button">Show me the answer!
+                    </button>
+                </p>
+            
+                <p class="card__answer hidden">Anubis is the answer!    
+                </p>
+
+                <p>
+                    <ul class="container">
+                        <li class="container__item">Horus</li>
+                        <li class="container__item">Ra</li>
+                        <li class="container__item">Isis</li>
+                        <li class="container__item">Anubis</li>
+                    </ul>
+                </p>
+            </article>
+    </section>
 </main>
                 
     <footer>
@@ -98,5 +111,6 @@
                 </article>
         </nav>
     </footer>
+    <script src="quizapp-card.js"></script>
 </body>
 </html>

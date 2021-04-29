@@ -103,16 +103,21 @@ body {
    
 .squeeze:hover {
   transform: scale(1.2);
-  transition: transform .8s ease-in-out 5s;
+  background-image: radial-gradient(var(--bd-item), transparent);
+  transition: transform .4s ease-in-out .5s;
 }
 
-.button {
+.card__button {
   position: absolute;
   top: 30%;
   right: 5%;
   padding: 5px;
-  border: solid 3px var(--bd-card);
-  border-radius: 50px;
+  background: transparent;
+  border: 2px solid white;
+  border-radius: 100vw;
+  color: white;
+  xpadding: .4rem .5rem .6rem;
+  cursor: pointer;
 }
    
 .navigation {
@@ -130,6 +135,12 @@ body {
 
 .active {
   background-color: var(--nav-item);
-  background-image: radial-gradient( white, transparent);
+  
 }
 
+.hidden{
+  /* display:none; */
+  /* opacity: 0; */
+   visibility: hidden;
+ }
+ 
